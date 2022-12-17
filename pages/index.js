@@ -4,6 +4,7 @@ import Navbar from "../components/navbar.jsx";
 import { Inter } from "@next/font/google";
 import Header from "../components/header.jsx";
 import Services from "../components/services.jsx";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -24,16 +25,21 @@ export default function Home() {
           <Header />
         </header>
 
-        <main className="min-h-screen">
+        <main className="">
           <div className="">
             <section className="mt-28">
               <Services />
             </section>
-            <section></section>
-            <section></section>
+            <section className="mt-28">Package Section</section>
+            <section className="mt-28">Explore Section</section>
+            <section className="mt-28">Register Section</section>
           </div>
         </main>
       </div>
+      <footer className="bg-slate-800 w-full h-96 text-slate-50">
+        <p>asd</p>
+        <Image src={"/gooutIcon.jpg"} alt="icon" width={200} height={200} />
+      </footer>
     </>
   );
 }

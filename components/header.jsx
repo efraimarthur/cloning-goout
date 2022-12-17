@@ -11,7 +11,7 @@ const Header = () => {
 
   const Card = ({title,detail,iconType}) => {
     return(
-      <div className="flex items-center border-2 border-transparent hover:border-slate-300">
+      <div className="flex items-center border-2 border-transparent hover:border-slate-300 hover:cursor-pointer">
         <Icon icon={iconType} width="20" height="20"/>
         <div className="mx-7">
           <p className="text-slate-900 font-medium">{title}</p>
@@ -32,14 +32,14 @@ const Header = () => {
           Try it now by filling out the form below!</p>
           <div className=" mt-14 flex flex-col w-[1160px]">
             <div className="w-[200px] flex">
-              <div className="basis-1/2 text-center font-medium bg-[#3258E8] rounded-tl-xl py-3  text-white">Flight</div>
-              <div className="basis-1/2 text-center font-medium py-3 text-[#0046FF]">Hotel</div>
+              <div className="basis-1/2 text-center font-medium bg-[#3258E8] rounded-tl-xl py-3  text-white hover:cursor-pointer">Flight</div>
+              <div className="basis-1/2 text-center font-medium py-3 text-[#0046FF] hover:cursor-pointer">Hotel</div>
             </div>
             <div className="flex justify-around py-6 bg-white rounded-xl">
               <Card title="NTB, Lombok" detail="Select the location" iconType={locationOnOutlineRounded}/>
               <Card title="17 Desember 2022" detail="Choose Flight Date"iconType={calendarTodayOutline}/>
               <Card title="Economy" detail="Choose Flight Type" iconType={flightClass}/>
-              <div className="flex justify-center items-center bg-[#3258E8] px-7 rounded-xl">
+              <div className="flex justify-center items-center bg-[#3258E8] px-7 rounded-xl hover:cursor-pointer">
               <Icon icon={searchRounded} width="20" height="20" color="white" className="mr-2"/>
                 <p className="font-medium text-white">Search Flight</p>
               </div>
