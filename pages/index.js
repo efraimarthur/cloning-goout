@@ -4,6 +4,9 @@ import Navbar from "../components/navbar.jsx";
 import { Inter } from "@next/font/google";
 import Header from "../components/header.jsx";
 import Services from "../components/services.jsx";
+import Package from "../components/package.jsx";
+import Explore from "../components/explore.jsx";
+import Register from "../components/register.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,13 +33,19 @@ export default function Home() {
             <section className="mt-28">
               <Services />
             </section>
-            <section className="mt-28">Package Section</section>
-            <section className="mt-28">Explore Section</section>
-            <section className="mt-28">Register Section</section>
+            <section className="mt-28">
+              <Package />
+            </section>
+            <section className="mt-28">
+              <Explore />
+            </section>
+            <section className="mt-28">
+              <Register />
+            </section>
           </div>
         </main>
       </div>
-      <footer className="bg-slate-800 w-full h-96 text-slate-50">
+      <footer className="bg-slate-800 w-full h-96 text-slate-50 mt-32">
         <p>asd</p>
         <Image src={"/gooutIcon.jpg"} alt="icon" width={200} height={200} />
       </footer>
