@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=" min-h-screen w-[1240px] mx-auto">
+      <div className="min-h-screen w-[1240px] mx-auto overflow-hidden pb-10">
         <nav>
           <Navbar />
         </nav>
