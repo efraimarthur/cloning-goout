@@ -7,15 +7,20 @@ const Explore = () => {
   const Card = ({ img, title, location, price }) => {
     return (
       <>
-        <div className="relative h-[440px] w-[287px] rounded-3xl shadow-xl shadow-slate-200 basis-1/4 hover:bg-slate-300 transition-all duration-500 group py-3">
-          <Image
-            alt="picture"
-            height={286}
-            width={286}
-            src={img}
-            className=" rounded-3xl mx-auto object-cover"
-            quality={100}
-          />
+        <div className="relative h-[440px] w-[287px] rounded-3xl shadow-xl shadow-slate-200 basis-1/4 hover:bg-slate-300 transition-all duration-100 group py-3 group">
+          <div className="relative w-[286px] h-[286px] mx-auto overflow-hidden rounded-3xl">
+            <Image
+              alt="picture"
+              height={286}
+              width={286}
+              src={img}
+              className="rounded-3xl object-cover absolute duration-300 group-hover:scale-110"
+              quality={100}
+            />
+            <div className="absolute right-4 top-4 bg-black text-slate-50 bg-opacity-10 px-3 py-1 rounded-3xl backdrop-blur-sm ">
+              🔶5.0
+            </div>
+          </div>
           <div className="flex flex-col items-start mt-5 ml-3">
             <p className="font-semibold text-lg text-slate-900">{title}</p>
             <p className="flex items-center text-[16px] text-slate-600 ">
