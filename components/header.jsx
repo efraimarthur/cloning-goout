@@ -30,6 +30,7 @@ const Header = () => {
           width={600}
           height={600}
           className=""
+          quality={100}
         />
         <div className="absolute left-1/2 -translate-x-1/2 bottom-[40px] bg-slate-100 bg-transparent">
           <p className="font-bold text-[52px] w-[509px] text-slate-900">
@@ -64,7 +65,7 @@ const Header = () => {
                 detail="Choose Flight Type"
                 iconType={flightClass}
               />
-              <div className="flex justify-center items-center bg-[#3258E8] px-7 rounded-xl hover:cursor-pointer">
+              <div className="flex justify-center items-center bg-[#3258E8] px-7 rounded-xl hover:cursor-pointer hover:opacity-80">
                 <Icon
                   icon={searchRounded}
                   width="20"

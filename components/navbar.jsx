@@ -17,7 +17,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="flex gap-6 text-[16px] font-medium text-slate-400">
+      <div className="flex gap-6 text-[16px] text-slate-400">
         <Link href={"/"} className="focus:text-[#466BF3] hover:text-slate-800">
           Home
         </Link>

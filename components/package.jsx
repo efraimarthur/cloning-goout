@@ -8,12 +8,13 @@ const Package = () => {
   return (
     <div className=" w-[1083px] mx-auto">
       <div className="flex gap-x-6">
-        <div className="basis-[29%] relative h-96 after:bg-gradient-to-t after:from-slate-800 after:inset-x-2 after:inset-y-64 after:bottom-2 after:rounded-b-3xl after:opacity-70 after:absolute border-transparent hover:border-sky-500 border-4 rounded-3xl">
+        <div className="basis-[29%] relative h-96 after:bg-gradient-to-t after:from-slate-800 after:inset-x-2 after:inset-y-64 after:bottom-2 after:rounded-b-3xl after:opacity-70 after:absolute border-transparent hover:border-sky-500 border-4 rounded-3xl transition-all duration-300">
           <Image
             alt="tower image"
             src={"/packTower.jpg"}
             fill
             className="p-2 rounded-3xl -z-10 "
+            quality={100}
           />
           <div className="text-slate-50 absolute bottom-10 left-10 z-20">
             <p>🔶🔶🔶🔶🔶</p>
@@ -24,12 +25,13 @@ const Package = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[29%] relative after:bg-gradient-to-t after:from-slate-800 after:inset-x-2 after:inset-y-64 after:bottom-2 after:rounded-b-3xl after:opacity-70 after:absolute border-transparent hover:border-sky-500 border-4 rounded-3xl">
+        <div className="basis-[29%] relative after:bg-gradient-to-t after:from-slate-800 after:inset-x-2 after:inset-y-64 after:bottom-2 after:rounded-b-3xl after:opacity-70 after:absolute border-transparent hover:border-sky-500 border-4 rounded-3xl transition-all duration-300">
           <Image
             alt="tower image"
             src={"/packBeach.jpg"}
             fill
             className="p-2 rounded-3xl -z-10"
+            quality={100}
           />
           <div className="text-slate-50 absolute bottom-10 left-10 z-20">
             <p>🔶🔶🔶🔶🔶</p>
