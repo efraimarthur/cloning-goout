@@ -5,6 +5,38 @@ import locationOnOutlineRounded from "@iconify/icons-material-symbols/location-o
 import { Icon } from "@iconify/react";
 
 const Package = () => {
+  const FiveStars = () => {
+    return (
+      <>
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+      </>
+    );
+  };
+
   return (
     <div className=" w-[1083px] mx-auto">
       <div className="flex gap-x-6">
@@ -17,7 +49,7 @@ const Package = () => {
             quality={100}
           />
           <div className="text-slate-50 absolute bottom-10 left-10 z-20">
-            <p>🔶🔶🔶🔶🔶</p>
+            <FiveStars />
             <p className="text-lg font-semibold">Greatest Tower</p>
             <div className="text-[16px] flex items-center">
               <Icon icon={locationOnOutlineRounded} width="20" height="20" />
@@ -34,7 +66,9 @@ const Package = () => {
             quality={100}
           />
           <div className="text-slate-50 absolute bottom-10 left-10 z-20">
-            <p>🔶🔶🔶🔶🔶</p>
+            <p>
+              <FiveStars />
+            </p>
             <p className="text-lg font-semibold">The Cliffside Beach</p>
             <div className="text-[16px] flex items-center">
               <Icon icon={locationOnOutlineRounded} width="20" height="20" />

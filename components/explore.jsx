@@ -17,8 +17,13 @@ const Explore = () => {
               className="rounded-3xl object-cover absolute duration-300 group-hover:scale-110"
               quality={100}
             />
-            <div className="absolute right-4 top-4 bg-black text-slate-50 bg-opacity-10 px-3 py-1 rounded-3xl backdrop-blur-sm ">
-              🔶5.0
+            <div className="absolute right-4 top-4 bg-black text-slate-50 bg-opacity-10 px-3 py-1 rounded-3xl backdrop-blur-sm flex items-center">
+              <Icon
+                icon="material-symbols:star"
+                color="orange"
+                className="inline text-xl"
+              />
+              5.0
             </div>
           </div>
           <div className="flex flex-col items-start mt-5 ml-3">

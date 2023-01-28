@@ -1,8 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Icon } from "@iconify/react";
 
 const Register = () => {
+  const FiveStars = () => {
+    return (
+      <>
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+        <Icon
+          icon="material-symbols:star"
+          color="orange"
+          className="inline text-xl"
+        />
+      </>
+    );
+  };
+
   return (
     <>
       <div className="w-[1200px] mx-auto h-[435px] bg-slate-300 relative rounded-tl-[90px] rounded-2xl group ">
@@ -28,7 +61,9 @@ const Register = () => {
           </Link>
         </div>
         <div className="absolute -bottom-11 left-11 rounded-3xl bg-slate-100 p-4">
-          <p>🔶🔶🔶🔶🔶</p>
+          <p>
+            <FiveStars />
+          </p>
           <p className="w-[180px] font-medium">
             Thank you for helping my vacation. Amazing!
           </p>
